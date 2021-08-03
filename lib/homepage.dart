@@ -3,10 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/loginpage.dart';
 
-void main() {
-  runApp(HomePage());
-}
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -123,12 +119,14 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(20, 100, 20, 20),
+                      margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                       child: const Center(
                         child: Text(
                           '“When you listen to yourself, everything comes naturally. It comes from inside, like a kind of will to do something. Try to be sensitive. That is yoga.” ― Petri Räisänen',
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 18,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.grey,
                           ),
                         ),
                       ),

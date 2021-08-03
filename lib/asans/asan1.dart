@@ -30,12 +30,37 @@ class Asan1 extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    Image(
-                      image: AssetImage('assets/images/pose2.jpg'),
-                      height: 400,
+                    SizedBox(
+                      height: 40,
+                    ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(10.0),
+                      child: Image(
+                        image: AssetImage('assets/images/pose2.jpg'),
+                        height: 170,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 40,
                     ),
                     Text(
-                        'This is an amazing one for beginners as it gives one the desired comfort. The asana is beyond the horizons of the physical dimension and gives a spiritual bliss. Sukhasana is best to reduce anxiety and stress and mental tiredness. It corrects the body posture and stretches the chest and spine.')
+                      'This is an amazing one for beginners as it gives one the desired comfort. The asana is beyond the horizons of the physical dimension and gives a spiritual bliss. Sukhasana is best to reduce anxiety and stress and mental tiredness. It corrects the body posture and stretches the chest and spine.',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    )
                   ],
                 ),
               ),
