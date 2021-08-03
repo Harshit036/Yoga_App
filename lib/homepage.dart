@@ -34,105 +34,115 @@ class HomePage extends StatelessWidget {
           ),
           //AppBar
           drawer: MyDrawer(),
-          body: TabBarView(
-            children: <Widget>[
-              ListView(
-                children: [
-                  CarouselSlider(
-                    items: [
-                      //1st Image of Slider
-                      Container(
-                        margin: EdgeInsets.all(6.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/img1.jpg'),
-                            fit: BoxFit.fitHeight,
+          body: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/img2.png'),
+                fit: BoxFit.cover,
+                colorFilter: new ColorFilter.mode(
+                    Colors.black.withOpacity(0.2), BlendMode.dstATop),
+              ),
+            ),
+            child: TabBarView(
+              children: <Widget>[
+                ListView(
+                  children: [
+                    CarouselSlider(
+                      items: [
+                        //1st Image of Slider
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img1.jpg'),
+                              fit: BoxFit.fitHeight,
+                            ),
                           ),
                         ),
-                      ),
 
-                      //2nd Image of Slider
-                      Container(
-                        margin: EdgeInsets.all(6.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/img2.png'),
-                            fit: BoxFit.fitHeight,
+                        //2nd Image of Slider
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img2.png'),
+                              fit: BoxFit.fitHeight,
+                            ),
                           ),
                         ),
-                      ),
 
-                      //3rd Image of Slider
-                      Container(
-                        margin: EdgeInsets.all(6.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/img3.png'),
-                            fit: BoxFit.fitHeight,
+                        //3rd Image of Slider
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img3.png'),
+                              fit: BoxFit.fitHeight,
+                            ),
                           ),
                         ),
-                      ),
 
-                      //4th Image of Slider
-                      Container(
-                        margin: EdgeInsets.all(6.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/img4.jpg'),
-                            fit: BoxFit.fitHeight,
+                        //4th Image of Slider
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img4.jpg'),
+                              fit: BoxFit.fitHeight,
+                            ),
                           ),
                         ),
-                      ),
 
-                      //5th Image of Slider
-                      Container(
-                        margin: EdgeInsets.all(6.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/img5.png'),
-                            fit: BoxFit.fitHeight,
+                        //5th Image of Slider
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img5.png'),
+                              fit: BoxFit.fitHeight,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
 
-                    //Slider Container properties
-                    options: CarouselOptions(
-                      height: 250.0,
-                      enlargeCenterPage: true,
-                      autoPlay: true,
-                      aspectRatio: 16 / 9,
-                      autoPlayCurve: Curves.fastOutSlowIn,
-                      enableInfiniteScroll: true,
-                      autoPlayAnimationDuration: Duration(milliseconds: 800),
-                      viewportFraction: 0.5,
+                      //Slider Container properties
+                      options: CarouselOptions(
+                        height: 250.0,
+                        enlargeCenterPage: true,
+                        autoPlay: true,
+                        aspectRatio: 16 / 9,
+                        autoPlayCurve: Curves.fastOutSlowIn,
+                        enableInfiniteScroll: true,
+                        autoPlayAnimationDuration: Duration(milliseconds: 800),
+                        viewportFraction: 0.5,
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(20, 100, 20, 20),
-                    child: const Center(
-                      child: Text(
-                        '“When you listen to yourself, everything comes naturally. It comes from inside, like a kind of will to do something. Try to be sensitive. That is yoga.” ― Petri Räisänen',
-                        style: TextStyle(
-                          fontSize: 24,
+                    Container(
+                      margin: EdgeInsets.fromLTRB(20, 100, 20, 20),
+                      child: const Center(
+                        child: Text(
+                          '“When you listen to yourself, everything comes naturally. It comes from inside, like a kind of will to do something. Try to be sensitive. That is yoga.” ― Petri Räisänen',
+                          style: TextStyle(
+                            fontSize: 24,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              Center(
-                child: Text('Hello beautiful'),
-              ),
-              Center(
-                child: Text('Hello beautiful'),
-              ),
-            ],
+                  ],
+                ),
+                Center(
+                  child: Text('Hello beautiful'),
+                ),
+                Center(
+                  child: Text('Hello beautiful'),
+                ),
+              ],
+            ),
           ),
         ),
       ),
