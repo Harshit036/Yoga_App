@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 2,
         child: Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
@@ -22,9 +22,8 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.lightBlue,
             bottom: TabBar(
               tabs: [
-                Tab(icon: Icon(Icons.music_note)),
-                Tab(icon: Icon(Icons.music_video)),
-                Tab(icon: Icon(Icons.camera_alt)),
+                Tab(icon: Icon(Icons.home)),
+                Tab(icon: Icon(Icons.fitness_center)),
               ],
             ),
           ),
@@ -132,9 +131,6 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
-                Center(
-                  child: Text('Hello beautiful'),
                 ),
                 Center(
                   child: Text('Hello beautiful'),
