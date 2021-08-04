@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:yoga/asans/asan1.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/loginpage.dart';
 
@@ -9,6 +10,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: new ThemeData(
+          scaffoldBackgroundColor: const Color.fromRGBO(124, 118, 118, 1)),
       home: DefaultTabController(
         length: 2,
         child: Scaffold(
@@ -33,7 +36,7 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/logo.png'),
-                fit: BoxFit.cover,
+                fit: BoxFit.fitHeight,
                 colorFilter: new ColorFilter.mode(
                     Colors.black.withOpacity(0.2), BlendMode.dstATop),
               ),
@@ -133,22 +136,33 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(4.0),
                   child: GridView.count(
                     crossAxisCount: 2,
                     children: [
-                      Card(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/iconpose1.png'),
-                              height: 100,
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text('Easy Pose')
-                          ],
+                      InkWell(
+                        onTap:(){
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Asan1())),
+                        }, 
+                        child: Card(
+                          color: Colors.blueGrey[0],
+                          child: Column(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/iconpose1.png'),
+                                height: 100,
+                              ),
+                              // SizedBox(
+                              //   height: 40,
+                              //
+                              SizedBox(
+                                height: 40,
+                              ),
+                              Text('Easy pose')
+                            ],
+                          ),
                         ),
                       ),
                       Card(
