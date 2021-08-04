@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 
-class Asan1 extends StatelessWidget {
-  const Asan1({Key? key}) : super(key: key);
+class Asan4 extends StatelessWidget {
+  const Asan4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class Asan1 extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Sukhasana Or Easy Pose"),
+              title: Text("Vakrasana Or Twisted Pose"),
               titleSpacing: 00.0,
               centerTitle: true,
               toolbarHeight: 80.2,
@@ -36,7 +36,7 @@ class Asan1 extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
-                        image: AssetImage('assets/images/pose1.jpg'),
+                        image: AssetImage('assets/images/pose4.jpg'),
                         height: 170,
                       ),
                     ),
@@ -44,7 +44,7 @@ class Asan1 extends StatelessWidget {
                       height: 40,
                     ),
                     Text(
-                      'This is an amazing one for beginners as it gives one the desired comfort. The asana is beyond the horizons of the physical dimension and gives a spiritual bliss. Sukhasana is best to reduce anxiety and stress and mental tiredness. It corrects the body posture and stretches the chest and spine.',
+                      'Vakrasana makes the body flexible and reduces belly fat and also helps in improving digestion by regulating digestive juices.',
                       style: TextStyle(
                         fontSize: 18,
                       ),
@@ -54,7 +54,7 @@ class Asan1 extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
+                      'Tip: One needs to make a posture like a steady stance by placing the right foot high up on the left thigh and the hands should be over the head with the palms together. The spine must be straight and the sole of the foot flat and firm. After releasing the pose, one needs to change the position and try the other leg.',
                       style: TextStyle(
                           fontSize: 16,
                           fontStyle: FontStyle.italic,

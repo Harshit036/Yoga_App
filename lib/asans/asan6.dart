@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 
-class Asan1 extends StatelessWidget {
-  const Asan1({Key? key}) : super(key: key);
+class Asan6 extends StatelessWidget {
+  const Asan6({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class Asan1 extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Sukhasana Or Easy Pose"),
+              title: Text("Bhujangasana Or Cobra Stretch"),
               titleSpacing: 00.0,
               centerTitle: true,
               toolbarHeight: 80.2,
@@ -36,25 +36,25 @@ class Asan1 extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
-                        image: AssetImage('assets/images/pose1.jpg'),
-                        height: 170,
+                        image: AssetImage('assets/images/pose5.jpg'),
+                        height: 190,
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Text(
-                      'This is an amazing one for beginners as it gives one the desired comfort. The asana is beyond the horizons of the physical dimension and gives a spiritual bliss. Sukhasana is best to reduce anxiety and stress and mental tiredness. It corrects the body posture and stretches the chest and spine.',
+                      'It is known as the corrector of the curvature and makes the spine flexible. The curve structure of the asana massages the deep back muscles, spine and nerves. It can be a great asana for people dealing with arthritis of the lower back and lower back pains. It relieves menstrual problems by stretching the uterus and ovaries. It releases stress through invigorating adrenal glands and kidneys.',
                       style: TextStyle(
                         fontSize: 18,
                       ),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 30,
                     ),
                     Text(
-                      'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
+                      'Tip: After lying on the floor on the stomach, the hands should be on the floor after the upper body should be stretched and uplifted.',
                       style: TextStyle(
                           fontSize: 16,
                           fontStyle: FontStyle.italic,
