@@ -21,7 +21,7 @@ class Asan3 extends StatelessWidget {
             body: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/img2.png'),
+                  image: AssetImage('assets/images/logo.png'),
                   fit: BoxFit.cover,
                   colorFilter: new ColorFilter.mode(
                       Colors.black.withOpacity(0.2), BlendMode.dstATop),

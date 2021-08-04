@@ -1,8 +1,14 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:yoga/asans/asan1.dart';
+import 'package:yoga/asans/asan2.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/loginpage.dart';
+
+import 'asans/asan3.dart';
+import 'asans/asan4.dart';
+import 'asans/asan5.dart';
+import 'asans/asan6.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -140,13 +146,14 @@ class HomePage extends StatelessWidget {
                   child: GridView.count(
                     crossAxisCount: 2,
                     children: [
-                      InkWell(
-                        onTap:(){
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Asan1())),
-                        }, 
-                        child: Card(
-                          color: Colors.blueGrey[0],
+                      Card(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Asan1()),
+                            );
+                          },
                           child: Column(
                             children: [
                               Image(
@@ -160,79 +167,148 @@ class HomePage extends StatelessWidget {
                               SizedBox(
                                 height: 40,
                               ),
-                              Text('Easy pose')
+                              Text(
+                                'Easy pose',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
                             ],
                           ),
                         ),
                       ),
                       Card(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/iconpose2.png'),
-                              height: 100,
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text('Boat Pose')
-                          ],
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Asan2()),
+                            );
+                          },
+                          child: Column(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/iconpose2.png'),
+                                height: 100,
+                              ),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              Text(
+                                'Boat Pose',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Card(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/iconpose3.png'),
-                              height: 100,
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text('Bow Pose')
-                          ],
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Asan3()),
+                            );
+                          },
+                          child: Column(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/iconpose3.png'),
+                                height: 100,
+                              ),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              Text(
+                                'Bow Pose',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Card(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/iconpose4.png'),
-                              height: 120,
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Text('Twisted Pose')
-                          ],
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Asan4()),
+                            );
+                          },
+                          child: Column(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/iconpose4.png'),
+                                height: 120,
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Text(
+                                'Twisted Pose',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Card(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/iconpose5.png'),
-                              height: 120,
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Text('Crow Pose')
-                          ],
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Asan5()),
+                            );
+                          },
+                          child: Column(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/iconpose5.png'),
+                                height: 120,
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Text(
+                                'Crow Pose',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Card(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/iconpose6.png'),
-                              height: 120,
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Text('Cobra Pose')
-                          ],
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Asan6()),
+                            );
+                          },
+                          child: Column(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/iconpose6.png'),
+                                height: 120,
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Text(
+                                'Cobra Pose',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],

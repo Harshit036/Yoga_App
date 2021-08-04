@@ -21,7 +21,7 @@ class Asan6 extends StatelessWidget {
             body: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/img2.png'),
+                  image: AssetImage('assets/images/logo.png'),
                   fit: BoxFit.cover,
                   colorFilter: new ColorFilter.mode(
                       Colors.black.withOpacity(0.2), BlendMode.dstATop),
@@ -37,7 +37,7 @@ class Asan6 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
                         image: AssetImage('assets/images/pose6.jpg'),
-                        height: 190,
+                        height: 200,
                       ),
                     ),
                     SizedBox(
