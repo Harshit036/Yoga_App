@@ -36,7 +36,7 @@ class Asan6 extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
-                        image: AssetImage('assets/images/pose5.jpg'),
+                        image: AssetImage('assets/images/pose6.jpg'),
                         height: 190,
                       ),
                     ),
