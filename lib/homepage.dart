@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
           body: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/img2.png'),
+                image: AssetImage('assets/images/logo.png'),
                 fit: BoxFit.cover,
                 colorFilter: new ColorFilter.mode(
                     Colors.black.withOpacity(0.2), BlendMode.dstATop),
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.0),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/img2.png'),
+                              image: AssetImage('assets/images/img2.jpg'),
                               fit: BoxFit.fitHeight,
                             ),
                           ),
@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.0),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/img3.png'),
+                              image: AssetImage('assets/images/img3.jpg'),
                               fit: BoxFit.fitHeight,
                             ),
                           ),
@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.0),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/img5.png'),
+                              image: AssetImage('assets/images/img5.jpg'),
                               fit: BoxFit.fitHeight,
                             ),
                           ),
@@ -114,7 +114,7 @@ class HomePage extends StatelessWidget {
                         autoPlayCurve: Curves.fastOutSlowIn,
                         enableInfiniteScroll: true,
                         autoPlayAnimationDuration: Duration(milliseconds: 800),
-                        viewportFraction: 0.5,
+                        viewportFraction: 0.4,
                       ),
                     ),
                     Container(
@@ -132,9 +132,98 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                Center(
-                  child: Text('Hello beautiful'),
-                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: GridView.count(
+                    crossAxisCount: 2,
+                    children: [
+                      Card(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/iconpose1.png'),
+                              height: 100,
+                            ),
+                            SizedBox(
+                              height: 40,
+                            ),
+                            Text('Easy Pose')
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/iconpose2.png'),
+                              height: 100,
+                            ),
+                            SizedBox(
+                              height: 40,
+                            ),
+                            Text('Boat Pose')
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/iconpose3.png'),
+                              height: 100,
+                            ),
+                            SizedBox(
+                              height: 40,
+                            ),
+                            Text('Bow Pose')
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/iconpose4.png'),
+                              height: 120,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text('Twisted Pose')
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/iconpose5.png'),
+                              height: 120,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text('Crow Pose')
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/iconpose6.png'),
+                              height: 120,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text('Cobra Pose')
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
