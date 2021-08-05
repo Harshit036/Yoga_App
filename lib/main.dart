@@ -7,6 +7,7 @@ import 'package:yoga/asans/asan5.dart';
 import 'package:yoga/asans/asan6.dart';
 import 'package:yoga/homepage.dart';
 import 'package:yoga/loginpage.dart';
+import 'package:yoga/sliderpage.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: SliderPage(),
     );
   }
 }

@@ -51,6 +51,7 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 ListView(
                   children: [
+                    CircularProgressIndicator(),
                     CarouselSlider(
                       items: [
                         //1st Image of Slider
@@ -112,6 +113,26 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ),
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img6.jpg'),
+                              fit: BoxFit.fitHeight,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(6.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/img7.jpg'),
+                              fit: BoxFit.fitHeight,
+                            ),
+                          ),
+                        ),
                       ],
 
                       //Slider Container properties
@@ -123,7 +144,7 @@ class HomePage extends StatelessWidget {
                         autoPlayCurve: Curves.fastOutSlowIn,
                         enableInfiniteScroll: true,
                         autoPlayAnimationDuration: Duration(milliseconds: 800),
-                        viewportFraction: 0.4,
+                        viewportFraction: 0.8,
                       ),
                     ),
                     Container(
@@ -134,7 +155,8 @@ class HomePage extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 18,
                             fontStyle: FontStyle.italic,
-                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -142,11 +164,14 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(4.0),
+                  padding: const EdgeInsets.fromLTRB(5, 7, 5, 7),
                   child: GridView.count(
                     crossAxisCount: 2,
+                    mainAxisSpacing: 20,
+                    crossAxisSpacing: 20,
                     children: [
                       Card(
+                        elevation: 5,
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
@@ -161,9 +186,6 @@ class HomePage extends StatelessWidget {
                                     AssetImage('assets/images/iconpose1.png'),
                                 height: 100,
                               ),
-                              // SizedBox(
-                              //   height: 40,
-                              //
                               SizedBox(
                                 height: 40,
                               ),
@@ -177,6 +199,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Card(
+                        elevation: 5,
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
@@ -204,6 +227,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Card(
+                        elevation: 5,
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
@@ -231,6 +255,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Card(
+                        elevation: 5,
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
@@ -258,6 +283,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Card(
+                        elevation: 5,
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
@@ -285,6 +311,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Card(
+                        elevation: 5,
                         child: InkWell(
                           onTap: () {
                             Navigator.push(

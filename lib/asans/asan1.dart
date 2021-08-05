@@ -37,7 +37,7 @@ class Asan1 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
                         image: AssetImage('assets/images/pose1.jpg'),
-                        height: 170,
+                        height: 250,
                       ),
                     ),
                     SizedBox(
@@ -56,7 +56,7 @@ class Asan1 extends StatelessWidget {
                     Text(
                       'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
                       style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 18,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
