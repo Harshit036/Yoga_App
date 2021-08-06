@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
+import 'package:yoga/widgets/timer.dart';
 
 class Asan1 extends StatelessWidget {
   const Asan1({Key? key}) : super(key: key);
@@ -60,7 +61,8 @@ class Asan1 extends StatelessWidget {
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
-                    )
+                    ),
+                    Timer(),
                   ],
                 ),
               ),
