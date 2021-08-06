@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text("Welcome, $name"),
+            title: Text("Yoga"),
             titleSpacing: 00.0,
             centerTitle: true,
             toolbarHeight: 100.2,
@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 ListView(
                   children: [
-                    CircularProgressIndicator(),
+                    // CircularProgressIndicator(),
                     CarouselSlider(
                       items: [
                         //1st Image of Slider
@@ -187,7 +187,7 @@ class HomePage extends StatelessWidget {
                                 height: 100,
                               ),
                               SizedBox(
-                                height: 40,
+                                height: 20,
                               ),
                               Text(
                                 'Easy pose',
@@ -215,7 +215,7 @@ class HomePage extends StatelessWidget {
                                 height: 100,
                               ),
                               SizedBox(
-                                height: 40,
+                                height: 20,
                               ),
                               Text(
                                 'Boat Pose',
@@ -243,7 +243,7 @@ class HomePage extends StatelessWidget {
                                 height: 100,
                               ),
                               SizedBox(
-                                height: 40,
+                                height: 20,
                               ),
                               Text(
                                 'Bow Pose',
@@ -271,7 +271,7 @@ class HomePage extends StatelessWidget {
                                 height: 120,
                               ),
                               SizedBox(
-                                height: 20,
+                                height: 10,
                               ),
                               Text(
                                 'Twisted Pose',
@@ -299,7 +299,7 @@ class HomePage extends StatelessWidget {
                                 height: 120,
                               ),
                               SizedBox(
-                                height: 20,
+                                height: 10,
                               ),
                               Text(
                                 'Crow Pose',
@@ -314,7 +314,9 @@ class HomePage extends StatelessWidget {
                         elevation: 5,
                         child: InkWell(
                           onTap: () {
-                            Navigator.push(
+                            Navigator.pop(context,
+                                true); // It worked for me instead of above line
+                            Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(builder: (context) => Asan6()),
                             );
@@ -327,7 +329,7 @@ class HomePage extends StatelessWidget {
                                 height: 120,
                               ),
                               SizedBox(
-                                height: 20,
+                                height: 10,
                               ),
                               Text(
                                 'Cobra Pose',
@@ -340,7 +342,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
           ),
