@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text("Yoga"),
+            title: Text("Yoga Guru"),
             titleSpacing: 00.0,
             centerTitle: true,
             toolbarHeight: 100.2,
@@ -147,6 +147,20 @@ class HomePage extends StatelessWidget {
                         viewportFraction: 0.8,
                       ),
                     ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Center(
+                      child: Container(
+                        child: Text(
+                          'Welcome, $name',
+                          style: TextStyle(
+                              fontSize: 25,
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.w900),
+                        ),
+                      ),
+                    ),
                     Container(
                       margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                       child: const Center(
@@ -156,7 +170,7 @@ class HomePage extends StatelessWidget {
                             fontSize: 18,
                             fontStyle: FontStyle.italic,
                             fontWeight: FontWeight.bold,
-                            color: Colors.black,
+                            color: Colors.grey,
                           ),
                         ),
                       ),
