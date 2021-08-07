@@ -1,8 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
+import 'package:yoga/widgets/timer.dart';
 
-class Asan5 extends StatelessWidget {
+class Asan5 extends StatefulWidget {
   const Asan5({Key? key}) : super(key: key);
+
+  @override
+  _Asan5State createState() => _Asan5State();
+}
+
+class _Asan5State extends State<Asan5> {
+  bool viewVisible = false;
+
+  void showWidget() {
+    setState(() {
+      viewVisible = true;
+    });
+  }
+
+  void hideWidget() {
+    setState(() {
+      viewVisible = false;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +80,34 @@ class Asan5 extends StatelessWidget {
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
-                    )
+                    ),
+                    Container(
+                      height: 50,
+                      width: 250,
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: ElevatedButton(
+                        onPressed: showWidget,
+                        child: Text(
+                          'Try it Now!',
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ),
+                    ),
+                    Visibility(
+                        maintainSize: true,
+                        maintainAnimation: true,
+                        maintainState: true,
+                        visible: viewVisible,
+                        child: Container(
+                            height: 100,
+                            width: 300,
+                            decoration: BoxDecoration(
+                                color: Colors.blue[100],
+                                borderRadius: BorderRadius.circular(50)),
+                            margin: EdgeInsets.only(top: 50, bottom: 30),
+                            child: Timer())),
                   ],
                 ),
               ),

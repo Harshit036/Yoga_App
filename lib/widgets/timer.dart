@@ -17,7 +17,7 @@ class _TimerState extends State<Timer> {
       children: <Widget>[
         CustomTimer(
           controller: _controller,
-          from: Duration(hours: 12),
+          from: Duration(minutes: 5),
           to: Duration(hours: 0),
           interval: Duration(seconds: 1),
           builder: (CustomTimerRemainingTime remaining) {
@@ -38,11 +38,11 @@ class _TimerState extends State<Timer> {
               onPressed: () => _controller.start(),
               color: Colors.green,
             ),
-            MaterialButton(
-              child: Text("Pause", style: TextStyle(color: Colors.white)),
-              onPressed: () => _controller.pause(),
-              color: Colors.blue,
-            ),
+            // MaterialButton(
+            //   child: Text("Pause", style: TextStyle(color: Colors.white)),
+            //   onPressed: () => _controller.pause(),
+            //   color: Colors.blue,
+            // ),
             MaterialButton(
                 child: Text("Reset", style: TextStyle(color: Colors.white)),
                 onPressed: () => _controller.reset(),
