@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/widgets/timer.dart';
 
-class Asan1 extends StatefulWidget {
-  const Asan1({Key? key}) : super(key: key);
+class Asan5 extends StatefulWidget {
+  const Asan5({Key? key}) : super(key: key);
 
   @override
-  _Asan1State createState() => _Asan1State();
+  _Asan5State createState() => _Asan5State();
 }
 
-class _Asan1State extends State<Asan1> {
+class _Asan5State extends State<Asan5> {
   bool viewVisible = false;
 
   void showWidget() {
@@ -30,7 +30,7 @@ class _Asan1State extends State<Asan1> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Sukhasana Or Easy Pose"),
+              title: Text("Kakasana Or Crow Pose"),
               titleSpacing: 00.0,
               centerTitle: true,
               toolbarHeight: 80.2,
@@ -56,15 +56,15 @@ class _Asan1State extends State<Asan1> {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
-                        image: AssetImage('assets/images/pose1.jpg'),
-                        height: 250,
+                        image: AssetImage('assets/images/pose5.jpg'),
+                        height: 170,
                       ),
                     ),
                     SizedBox(
                       height: 40,
                     ),
                     Text(
-                      'This is an amazing one for beginners as it gives one the desired comfort. The asana is beyond the horizons of the physical dimension and gives a spiritual bliss. Sukhasana is best to reduce anxiety and stress and mental tiredness. It corrects the body posture and stretches the chest and spine.',
+                      'For anyone who wants to improve their concentration power, wipe out sluggishness and enhance mental and physical balance, kakasana is the best option, as it stretches the muscles of arms, wrists, and forearms. The posture makes the body and mind feel light. It brings together the scattered mind. It is difficult to perform and takes a lot of practices.',
                       style: TextStyle(
                         fontSize: 18,
                       ),
@@ -74,15 +74,12 @@ class _Asan1State extends State<Asan1> {
                       height: 10,
                     ),
                     Text(
-                      'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
+                      'Tip: One needs to squat and keep the legs slightly apart with the hands firmly on the floor. After that, the body should be uplifted and the hands on the floor.',
                       style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
                     ),
                     Container(
                       height: 50,

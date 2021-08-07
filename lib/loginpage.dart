@@ -37,7 +37,7 @@ class _LoginDemoState extends State<LoginDemo> {
                     /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
-                    child: Image.asset('assets/images/img2.png')),
+                    child: Image.asset('assets/images/logo.png')),
               ),
             ),
             Padding(
@@ -53,10 +53,21 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Email',
+                    hintText: 'Enter Email Address'),
+                onChanged: (value) {
+                  name = value;
+                },
+              ),
+            ),
+            Padding(
               padding: const EdgeInsets.only(
                   left: 15.0, right: 15.0, top: 15, bottom: 0),
               child: TextField(
-                obscureText: true,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Age',
@@ -72,13 +83,13 @@ class _LoginDemoState extends State<LoginDemo> {
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-              child: TextButton(
+              child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => HomePage()));
                 },
                 child: Text(
-                  'Login',
+                  'Get Started!',
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/widgets/timer.dart';
 
-class Asan1 extends StatefulWidget {
-  const Asan1({Key? key}) : super(key: key);
+class Asan4 extends StatefulWidget {
+  const Asan4({Key? key}) : super(key: key);
 
   @override
-  _Asan1State createState() => _Asan1State();
+  _Asan4State createState() => _Asan4State();
 }
 
-class _Asan1State extends State<Asan1> {
+class _Asan4State extends State<Asan4> {
   bool viewVisible = false;
 
   void showWidget() {
@@ -30,7 +30,7 @@ class _Asan1State extends State<Asan1> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Sukhasana Or Easy Pose"),
+              title: Text("Vakrasana Or Twisted Pose"),
               titleSpacing: 00.0,
               centerTitle: true,
               toolbarHeight: 80.2,
@@ -56,15 +56,15 @@ class _Asan1State extends State<Asan1> {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image(
-                        image: AssetImage('assets/images/pose1.jpg'),
-                        height: 250,
+                        image: AssetImage('assets/images/pose4.jpg'),
+                        height: 170,
                       ),
                     ),
                     SizedBox(
                       height: 40,
                     ),
                     Text(
-                      'This is an amazing one for beginners as it gives one the desired comfort. The asana is beyond the horizons of the physical dimension and gives a spiritual bliss. Sukhasana is best to reduce anxiety and stress and mental tiredness. It corrects the body posture and stretches the chest and spine.',
+                      'Vakrasana makes the body flexible and reduces belly fat and also helps in improving digestion by regulating digestive juices.',
                       style: TextStyle(
                         fontSize: 18,
                       ),
@@ -74,15 +74,12 @@ class _Asan1State extends State<Asan1> {
                       height: 10,
                     ),
                     Text(
-                      'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
+                      'Tip: One needs to make a posture like a steady stance by placing the right foot high up on the left thigh and the hands should be over the head with the palms together. The spine must be straight and the sole of the foot flat and firm. After releasing the pose, one needs to change the position and try the other leg.',
                       style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
                     ),
                     Container(
                       height: 50,
