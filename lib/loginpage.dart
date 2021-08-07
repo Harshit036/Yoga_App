@@ -53,6 +53,18 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Email',
+                    hintText: 'Enter Email Address'),
+                onChanged: (value) {
+                  name = value;
+                },
+              ),
+            ),
+            Padding(
               padding: const EdgeInsets.only(
                   left: 15.0, right: 15.0, top: 15, bottom: 0),
               child: TextField(
