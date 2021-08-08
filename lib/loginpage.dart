@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'HomePage.dart';
 
 String name = "";
+String email = "";
 
 class Loginpage extends StatelessWidget {
   @override
@@ -60,7 +61,7 @@ class _LoginDemoState extends State<LoginDemo> {
                     labelText: 'Email',
                     hintText: 'Enter Email Address'),
                 onChanged: (value) {
-                  name = value;
+                  email = value;
                 },
               ),
             ),

@@ -7,19 +7,38 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var username = name;
+    var emailaddress = email;
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blueGrey,
-            ),
-            child: Text(
-              '$name',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
+          Container(
+            height: 300,
+            child: DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+              ),
+              child: ListView(
+                children: [
+                  CircleAvatar(
+                      radius: 60,
+                      backgroundImage: AssetImage('assets/images/logo2.png')),
+                  Text(
+                    'Harshit Vasih',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 17,
+                    ),
+                  ),
+                  Text(
+                    'harshit_v@ceiitr.ac.in',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
