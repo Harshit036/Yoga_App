@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/widgets/timer.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Asan3 extends StatefulWidget {
   const Asan3({Key? key}) : super(key: key);
@@ -80,6 +81,49 @@ class _Asan3State extends State<Asan3> {
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'Tip: Sit with the legs tucked inside the opposite thighs and the spine should be vertically straight. The hands should be placed on the knees and breathe in and out gently.',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Text(
+                      'Video Tutorial:',
+                      style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w900,
+                          fontStyle: FontStyle.italic),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 190,
+                      width: 340,
+                      child: YoutubePlayer(
+                        controller: YoutubePlayerController(
+                          initialVideoId: '4P2mYcOGxbU', //Add videoID.
+                          flags: YoutubePlayerFlags(
+                            hideControls: false,
+                            controlsVisibleAtStart: true,
+                            autoPlay: false,
+                            mute: false,
+                          ),
+                        ),
+                        showVideoProgressIndicator: true,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50,
                     ),
                     Container(
                       height: 50,

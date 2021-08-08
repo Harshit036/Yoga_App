@@ -14,29 +14,41 @@ class MyDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           Container(
-            height: 300,
+            height: 250,
             child: DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blueGrey,
               ),
               child: ListView(
                 children: [
-                  CircleAvatar(
-                      radius: 60,
-                      backgroundImage: AssetImage('assets/images/logo2.png')),
-                  Text(
-                    'Harshit Vasih',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 17,
-                    ),
-                  ),
-                  Text(
-                    'harshit_v@ceiitr.ac.in',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 13,
-                    ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                          radius: 60,
+                          backgroundImage:
+                              AssetImage('assets/images/logo2.png')),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        'Harshit Vaish',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'harshit_v@ceiitr.ac.in',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -59,6 +71,14 @@ class MyDrawer extends StatelessWidget {
             leading: Icon(Icons.stacked_bar_chart),
             title: Text('Tracker'),
             onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.logout),
+            title: Text('Logout'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => Loginpage()));
+            },
           ),
         ],
       ),

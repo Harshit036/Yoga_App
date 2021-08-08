@@ -84,22 +84,32 @@ class _Asan1State extends State<Asan1> {
                     SizedBox(
                       height: 50,
                     ),
-                    // Container(
-                    //   height: 100,
-                    //   width: 200,
-                    //   child: YoutubePlayer(
-                    //     controller: YoutubePlayerController(
-                    //       initialVideoId: 'ri9B8IzLXIY', //Add videoID.
-                    //       flags: YoutubePlayerFlags(
-                    //         hideControls: false,
-                    //         controlsVisibleAtStart: true,
-                    //         autoPlay: false,
-                    //         mute: false,
-                    //       ),
-                    //     ),
-                    //     showVideoProgressIndicator: true,
-                    //   ),
-                    // ),
+                    Text(
+                      'Video Tutorial:',
+                      style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w900,
+                          fontStyle: FontStyle.italic),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 190,
+                      width: 340,
+                      child: YoutubePlayer(
+                        controller: YoutubePlayerController(
+                          initialVideoId: 'ri9B8IzLXIY', //Add videoID.
+                          flags: YoutubePlayerFlags(
+                            hideControls: false,
+                            controlsVisibleAtStart: true,
+                            autoPlay: false,
+                            mute: false,
+                          ),
+                        ),
+                        showVideoProgressIndicator: true,
+                      ),
+                    ),
                     SizedBox(
                       height: 50,
                     ),
