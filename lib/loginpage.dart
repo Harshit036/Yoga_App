@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'HomePage.dart';
 
 String name = "";
+String email = "";
 
 class Loginpage extends StatelessWidget {
   @override
@@ -29,11 +30,11 @@ class _LoginDemoState extends State<LoginDemo> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 60.0),
+              padding: const EdgeInsets.only(top: 30.0),
               child: Center(
                 child: Container(
                     width: 200,
-                    height: 150,
+                    height: 200,
                     /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
@@ -41,7 +42,7 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -53,20 +54,19 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
                     hintText: 'Enter Email Address'),
                 onChanged: (value) {
-                  name = value;
+                  email = value;
                 },
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
-                  left: 15.0, right: 15.0, top: 15, bottom: 0),
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -76,7 +76,7 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             SizedBox(
-              height: 60,
+              height: 40,
             ),
             Container(
               height: 50,

@@ -7,19 +7,50 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var username = name;
+    var emailaddress = email;
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blueGrey,
-            ),
-            child: Text(
-              '$name',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
+          Container(
+            height: 330,
+            child: DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+              ),
+              child: ListView(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                          radius: 60,
+                          backgroundImage:
+                              AssetImage('assets/images/logo2.png')),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        '$username',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        '$emailaddress',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
@@ -40,6 +71,14 @@ class MyDrawer extends StatelessWidget {
             leading: Icon(Icons.stacked_bar_chart),
             title: Text('Tracker'),
             onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.logout),
+            title: Text('Logout'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => Loginpage()));
+            },
           ),
         ],
       ),

@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   carousel_slider: ^4.0.0
   custom_timer: ^0.0.6
+  youtube_player_flutter: ^8.0.0
+  google_fonts: ^2.1.0
  
 
 
@@ -35,6 +37,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  flutter_launcher_icons: ^0.9.1
+
+flutter_icons:
+  image_path: "assets/images/iconpose1.png"   
+  android: true
+  ios: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

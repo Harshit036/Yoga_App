@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yoga/widgets/drawer.dart';
 import 'package:yoga/widgets/timer.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Asan1 extends StatefulWidget {
   const Asan1({Key? key}) : super(key: key);
@@ -11,7 +12,6 @@ class Asan1 extends StatefulWidget {
 
 class _Asan1State extends State<Asan1> {
   bool viewVisible = false;
-
   void showWidget() {
     setState(() {
       viewVisible = true;
@@ -80,6 +80,35 @@ class _Asan1State extends State<Asan1> {
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Text(
+                      'Video Tutorial:',
+                      style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w900,
+                          fontStyle: FontStyle.italic),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 190,
+                      width: 340,
+                      child: YoutubePlayer(
+                        controller: YoutubePlayerController(
+                          initialVideoId: 'ri9B8IzLXIY', //Add videoID.
+                          flags: YoutubePlayerFlags(
+                            hideControls: false,
+                            controlsVisibleAtStart: true,
+                            autoPlay: false,
+                            mute: false,
+                          ),
+                        ),
+                        showVideoProgressIndicator: true,
+                      ),
                     ),
                     SizedBox(
                       height: 50,
