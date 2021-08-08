@@ -14,7 +14,7 @@ class MyDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           Container(
-            height: 250,
+            height: 330,
             child: DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blueGrey,
@@ -32,7 +32,7 @@ class MyDrawer extends StatelessWidget {
                         height: 20,
                       ),
                       Text(
-                        'Harshit Vaish',
+                        '$username',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -42,7 +42,7 @@ class MyDrawer extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'harshit_v@ceiitr.ac.in',
+                        '$emailaddress',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 13,

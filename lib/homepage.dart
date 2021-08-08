@@ -1,4 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:yoga/asans/asan1.dart';
 import 'package:yoga/asans/asan2.dart';
@@ -60,11 +60,11 @@ class HomePage extends StatelessWidget {
                     Center(
                       child: Container(
                         child: Text(
-                          'Welcome, $name',
+                          'Welcome! $name',
                           style: TextStyle(
                               fontSize: 25,
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.w900),
+                              // fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                     ),
@@ -72,9 +72,9 @@ class HomePage extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                       child: const Center(
                         child: Text(
-                          '“When you listen to yourself, everything comes naturally. It comes from inside, like a kind of will to do something. Try to be sensitive. That is yoga.” ― Petri Räisänen',
+                          '"The very heart of yoga practice is \'abyhasa\' – steady effort in the direction you want to go."',
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 23,
                             fontStyle: FontStyle.italic,
                             fontWeight: FontWeight.bold,
                             color: Colors.grey,
@@ -82,6 +82,30 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          'Why Yoga?',
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            'Yoga improves strength, balance and flexibility, helps with back pain relief. Yoga can ease arthritis symptoms. Yoga benefits heart health. Yoga relaxes you, to help you sleep better. Yoga can mean more energy and brighter moods, helps you manage stress. Yoga connects you with a supportive community and promotes better self-care.   ',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.cairo(
+                                textStyle: TextStyle(fontSize: 23)),
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ),
                 Padding(
