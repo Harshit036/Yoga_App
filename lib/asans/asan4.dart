@@ -145,11 +145,11 @@ class _Asan4State extends State<Asan4> {
                         maintainState: true,
                         visible: viewVisible,
                         child: Container(
-                            height: 100,
+                            height: 200,
                             width: 300,
                             decoration: BoxDecoration(
                                 color: Colors.blue[100],
-                                borderRadius: BorderRadius.circular(50)),
+                                borderRadius: BorderRadius.circular(10)),
                             margin: EdgeInsets.only(top: 50, bottom: 30),
                             child: Timer())),
                   ],
